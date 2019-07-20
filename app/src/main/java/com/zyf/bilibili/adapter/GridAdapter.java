@@ -1,4 +1,4 @@
-package com.zyf.bilibili;
+package com.zyf.bilibili.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,6 +9,8 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.zyf.bilibili.R;
+import com.zyf.bilibili.bean.Bean_grid;
 
 import java.util.List;
 

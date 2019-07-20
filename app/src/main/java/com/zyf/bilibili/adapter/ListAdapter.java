@@ -1,4 +1,4 @@
-package com.zyf.bilibili;
+package com.zyf.bilibili.adapter;
 
 import android.widget.ImageView;
 
@@ -7,6 +7,8 @@ import androidx.annotation.Nullable;
 import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.zyf.bilibili.R;
+import com.zyf.bilibili.bean.Bean_mainList;
 
 import java.util.List;
 

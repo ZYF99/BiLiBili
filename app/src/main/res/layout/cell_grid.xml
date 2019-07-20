@@ -26,19 +26,19 @@
             <ImageView
                 android:id="@+id/grid_img"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:scaleType="centerCrop"
+                android:layout_height="25dp"
+                android:scaleType="centerInside"
                 android:src="@drawable/ic_launcher_background" />
 
             <TextView
                 android:id="@+id/grid_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/dp_4"
-                android:gravity="center"
+                android:layout_marginTop="@dimen/dp_10"
+                android:gravity="start"
                 android:text="EDG vs VSG 2019KCC"
                 android:textColor="@android:color/black"
-                android:textSize="14sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

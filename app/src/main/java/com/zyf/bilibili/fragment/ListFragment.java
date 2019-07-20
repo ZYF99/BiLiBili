@@ -1,4 +1,4 @@
-package com.zyf.bilibili;
+package com.zyf.bilibili.fragment;
 
 import android.content.Context;
 import android.os.Bundle;
@@ -12,7 +12,6 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.annotation.StyleableRes;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -21,11 +20,15 @@ import com.bumptech.glide.Glide;
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.scwang.smartrefresh.layout.SmartRefreshLayout;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.listener.OnLoadMoreListener;
 import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
 import com.zhouwei.mzbanner.MZBannerView;
 import com.zhouwei.mzbanner.holder.MZHolderCreator;
 import com.zhouwei.mzbanner.holder.MZViewHolder;
+import com.zyf.bilibili.R;
+import com.zyf.bilibili.adapter.GridAdapter;
+import com.zyf.bilibili.adapter.ListAdapter;
+import com.zyf.bilibili.bean.Bean_grid;
+import com.zyf.bilibili.bean.Bean_mainList;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -57,7 +60,7 @@ public class ListFragment extends Fragment {
         smartRefreshLayout = view.findViewById(R.id.smart);
         list = new ArrayList<>();
 
-        Bean_mainList item = new Bean_mainList("AAAAAA", "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563613955276&di=9098ad471181ee4647fcf102dabadb8f&imgtype=0&src=http%3A%2F%2Fuploads.5068.com%2Fallimg%2F1712%2F151-1G20G13635.jpg");
+        Bean_mainList item = new Bean_mainList("EDG vs VSG 2019KCC", "https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1563613955276&di=9098ad471181ee4647fcf102dabadb8f&imgtype=0&src=http%3A%2F%2Fuploads.5068.com%2Fallimg%2F1712%2F151-1G20G13635.jpg");
         list.add(item);
         list.add(item);
         list.add(item);

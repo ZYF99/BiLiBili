@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardCornerRadius="8dp"
-        app:cardElevation="0dp"
+        app:cardElevation="1dp"
         app:cardUseCompatPadding="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -31,7 +31,7 @@
                     android:id="@+id/cell_img"
                     android:layout_width="match_parent"
                     android:layout_height="120dp"
-                    android:scaleType="centerCrop"
+                    android:scaleType="fitXY"
                     android:src="@drawable/ic_launcher_background"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -58,20 +58,23 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:text="哔哩哔哩王者荣耀"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
 
                     <ImageView
                         android:id="@+id/imageView5"
                         android:layout_width="15dp"
                         android:layout_height="15dp"
-                        app:srcCompat="@android:drawable/btn_star" />
+                        android:tint="#fff"
+                        app:srcCompat="@drawable/ic_people" />
 
                     <TextView
                         android:id="@+id/textView2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="131.5万"
-                        android:textColor="@android:color/white" />
+                        android:textColor="@android:color/white"
+                        android:textSize="12sp" />
 
                 </LinearLayout>
 
@@ -81,10 +84,11 @@
                 android:id="@+id/cell_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
+                android:padding="8dp"
+                android:gravity="start"
                 android:text="EDG vs VSG 2019KCC"
                 android:textColor="@android:color/black"
-                android:textSize="18sp" />
+                android:textSize="12sp" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,4 +1,4 @@
-package com.zyf.bilibili;
+package com.zyf.bilibili.bean;
 
 public class Bean_grid {
 

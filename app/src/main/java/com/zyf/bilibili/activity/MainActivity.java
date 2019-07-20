@@ -1,4 +1,4 @@
-package com.zyf.bilibili;
+package com.zyf.bilibili.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -7,6 +7,10 @@ import androidx.viewpager.widget.ViewPager;
 import android.os.Bundle;
 
 import com.google.android.material.tabs.TabLayout;
+import com.zyf.bilibili.R;
+import com.zyf.bilibili.adapter.PagAdapter;
+import com.zyf.bilibili.fragment.ListFragment;
+import com.zyf.bilibili.statusBarHelper.StatusBarUtil;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,6 +35,9 @@ public class MainActivity extends AppCompatActivity {
 
     //初始化控件
     void initWidget(){
+        //状态栏字体黑色
+        StatusBarUtil.setStatusTextColor(true, this);
+
         ListFragment listFragment1= new ListFragment();
         ListFragment listFragment2 = new ListFragment();
         ListFragment listFragment3 = new ListFragment();

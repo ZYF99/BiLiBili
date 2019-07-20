@@ -2,6 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
+    android:background="#fff"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -15,8 +16,11 @@
     <GridView
         android:id="@+id/grid"
         android:layout_width="match_parent"
-        android:layout_height="180dp"
-        android:layout_marginTop="10dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:background="#fff"
+        android:listSelector="#00FFFFFF"
         android:numColumns="5"
         android:stretchMode="columnWidth" />
 
@@ -24,7 +28,7 @@
         android:id="@+id/sd"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#8ADADADA"/>
+        android:background="#8AEEEEEE"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -74,6 +78,6 @@
         android:id="@+id/asddssf"
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="#59E2E2E2"/>
+        android:background="#48EEEEEE"/>
 
 </LinearLayout>
